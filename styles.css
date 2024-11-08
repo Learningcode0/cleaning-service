@@ -6,11 +6,11 @@
 
 body {
     font-family: Arial, sans-serif;
-    color: #333;
+    background-color: #121212;
+    color: #E0E0E0;
 }
 
-header {
-    position: relative;
+#hero {
     background-image: url('https://www.sunriseindustrial.com/wp-content/uploads/2023/04/The-Dos-And-Donts-Of-Using-Industrial-Cleaning-Supplies.jpg.webp');
     background-size: cover;
     background-position: center;
@@ -18,38 +18,33 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #fff;
+    position: relative;
+    color: #E0E0E0;
     text-align: center;
 }
 
-.header-overlay {
-    background-color: rgba(0, 0, 0, 0.6);
+.overlay {
+    background: rgba(0, 0, 0, 0.6);
     padding: 20px;
     border-radius: 10px;
 }
 
-header h1 {
+#hero h1 {
     font-size: 3em;
-    margin-bottom: 10px;
 }
 
-header p {
-    font-size: 1.2em;
-}
-
-.btn {
+.cta-btn {
     background-color: #4CAF50;
     color: #fff;
     padding: 10px 20px;
     border-radius: 5px;
     text-decoration: none;
-    margin-top: 20px;
     display: inline-block;
+    margin-top: 20px;
 }
 
-.btn:hover {
+.cta-btn:hover {
     background-color: #333;
-    color: #fff;
 }
 
 section {
@@ -57,34 +52,44 @@ section {
     text-align: center;
 }
 
-#services .service,
-#testimonials .testimonial {
-    margin: 20px 0;
-    border: 1px solid #ddd;
+#services h2,
+#testimonials h2,
+#contact h2 {
+    color: #4CAF50;
+    margin-bottom: 20px;
+}
+
+.service-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.service {
+    background: #1E1E1E;
     padding: 20px;
     border-radius: 8px;
+    width: 30%;
+    margin: 10px;
+    color: #E0E0E0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
 #contact form {
-    max-width: 500px;
+    max-width: 600px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    gap: 10px;
-}
-
-#contact label {
-    font-weight: bold;
-    text-align: left;
 }
 
 #contact input,
 #contact textarea,
 #contact button {
-    padding: 10px;
-    font-size: 1em;
-    border: 1px solid #ddd;
+    padding: 15px;
+    margin: 10px 0;
+    border: none;
     border-radius: 5px;
+    font-size: 1em;
 }
 
 #contact button {
@@ -95,4 +100,13 @@ section {
 
 #contact button:hover {
     background-color: #333;
+}
+
+.testimonial {
+    background: #1E1E1E;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px auto;
+    width: 80%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
